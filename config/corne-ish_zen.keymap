@@ -41,7 +41,7 @@
 				&trans    &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L  &kp U  &kp Y  &kp QMARK  &kp trans
 				&kp CAPS  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G    &kp M  &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O  &kp trans
 				&trans    &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &cose  &doco  &kp APOS  &kp trans
-				&lt 6 ESC  &lt 5 SPACE  &lt 4 TAB    &lt 3 ENTER  &lt 2 BSPC  &lt 1 DEL
+				&lt NAVI ESC  &lt NUMB SPACE  &lt SYMB TAB    &lt HTKY ENTER  &lt BRAC BSPC  &lt FUNC DEL
 			>;
 		};
 		functions_layer {
