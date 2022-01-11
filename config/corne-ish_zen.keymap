@@ -110,7 +110,7 @@
 		navigation_layer {
 			label = "_NAVI";
 			bindings = <
-				&trans  &trans  &trans  &trans  &trans  &trans    &none  &none  &none  &none  &none  &bootloader
+				&trans  &trans  &trans  &trans  &trans  &trans    &reset  &none  &none  &none  &none  &bootloader
 				&trans  &trans  &trans  &trans  &trans  &trans    &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
 				&trans  &trans  &trans  &trans  &trans  &trans    &none  &none  &none  &none  &none  &none
 				&trans  &trans  &trans    &trans  &trans  &trans
