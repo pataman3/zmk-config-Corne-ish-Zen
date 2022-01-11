@@ -17,15 +17,11 @@
 #define NUMB 5
 #define NAVI 6
 
-&mt {
-	tapping-term-ms = <170>;
-};
-
 / {
 	behaviors {
-		bt: better_tap {
+		hrm: home_row_mods {
 			compatible = "zmk,behavior-hold-tap";
-			label = "BETTER_TAP";
+			label = "HOME_ROW_MODS";
 			#binding-cells = <2>;
 			flavor = "tap-preferred";
 			tapping-term-ms = <150>;
@@ -61,7 +57,7 @@
 			label = "_BASE";
 			bindings = <
 				&trans    &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L  &kp U  &kp Y  &kp QMARK  &trans
-				&kp CAPS  &bt LGUI A  &bt LALT R  &bt LCTRL S  &bt LSHFT T  &kp G    &kp M  &bt RSHFT N  &bt RCTRL E  &bt RALT I  &bt RGUI O  &trans
+				&kp CAPS  &hrm LGUI A  &hrm LALT R  &hrm LCTRL S  &hrm LSHFT T  &kp G    &kp M  &hrm RSHFT N  &hrm RCTRL E  &hrm RALT I  &hrm RGUI O  &trans
 				&trans    &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &cose  &doco  &kp APOS  &trans
 				&lt NAVI ESC  &lt NUMB SPACE  &lt SYMB TAB    &lt HTKY ENTER  &lt BRAC BSPC  &lt FUNC DEL
 			>;
