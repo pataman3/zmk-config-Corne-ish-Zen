@@ -54,7 +54,7 @@
 			>;
 		};
 		functions_layer {
-			label = "_FUNC;
+			label = "_FUNC";
 			bindings = <
 				&none  &kp F12  &kp F7  &kp F8  &kp F9  &none    &trans  &trans  &trans  &trans  &trans  &trans
 				&none  &kp F11  &kp F4  &kp F5  &kp F6  &none    &trans  &trans  &trans  &trans  &trans  &trans
