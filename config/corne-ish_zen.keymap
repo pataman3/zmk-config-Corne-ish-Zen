@@ -38,9 +38,9 @@
 		base_layer {
 			label = "BASE;
 			bindings = <
-				&trans    &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L  &kp U  &kp Y  &kp QMARK  &kp trans
-				&kp CAPS  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G    &kp M  &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O  &kp trans
-				&trans    &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &cose  &doco  &kp APOS  &kp trans
+				&trans    &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L  &kp U  &kp Y  &kp QMARK  &trans
+				&kp CAPS  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G    &kp M  &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O  &trans
+				&trans    &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &cose  &doco  &kp APOS  &trans
 				&lt _NAVI ESC  &lt _NUMB SPACE  &lt _SYMB TAB    &lt _HTKY ENTER  &lt _BRAC BSPC  &lt _FUNC DEL
 			>;
 		};
