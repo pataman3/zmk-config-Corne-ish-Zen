@@ -56,9 +56,9 @@
 		default_layer {
 			label = "_BASE";
 			bindings = <
-				&trans    &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L  &kp U  &kp Y  &kp QMARK  &trans
-				&kp CAPS  &hrm LGUI A  &hrm LALT R  &hrm LCTRL S  &hrm LSHFT T  &kp G    &kp M  &hrm RSHFT N  &hrm RCTRL E  &hrm RALT I  &hrm RGUI O  &trans
-				&trans    &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &cose  &doco  &kp APOS  &trans
+				&none    &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L  &kp U  &kp Y  &kp QMARK  &none
+				&kp CAPS  &hrm LGUI A  &hrm LALT R  &hrm LCTRL S  &hrm LSHFT T  &kp G    &kp M  &hrm RSHFT N  &hrm RCTRL E  &hrm RALT I  &hrm RGUI O  &none
+				&none    &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &cose  &doco  &kp APOS  &none
 				&lt NAVI ESC  &lt NUMB SPACE  &lt SYMB TAB    &lt HTKY ENTER  &lt BRAC BSPC  &lt FUNC DEL
 			>;
 		};
@@ -74,7 +74,7 @@
 		brackets_layer {
 			label = "_BRAC";
 			bindings = <
-				&none  &gresc  &kp PIPE  &kp FSLH  &kp BSLH  &none    &trans  &trans  &trans  &trans  &trans  &trans
+				&none  &gresc  &kp PIPE  &kp FSLH  &kp BSLH  &none       &trans  &trans  &trans  &trans  &trans  &trans
 				&none  &kp LBKT  &kp RBKT  &kp LPAR  &kp RPAR  &none     &trans  &trans  &trans  &trans  &trans  &trans
 				&none  &kp LT  &kp GT  &kp LBRC  &kp RBRC  &none         &trans  &trans  &trans  &trans  &trans  &trans
 				&trans  &trans  &trans    &trans  &trans  &trans
