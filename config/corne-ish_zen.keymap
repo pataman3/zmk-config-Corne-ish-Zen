@@ -9,16 +9,29 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define _BASE 0
-#define _FUNC 1
-#define _BRAC 2
-#define _HTKY 3
-#define _SYMB 4
-#define _NUMB 5
-#define _NAVI 6
+#define BASE 0
+#define FUNC 1
+#define BRAC 2
+#define HTKY 3
+#define SYMB 4
+#define NUMB 5
+#define NAVI 6
+
+&mt {
+	tapping-term-ms = <170>;
+};
 
 / {
 	behaviors {
+		bt: better_tap {
+			compatible = "zmk,behavior-hold-tap";
+			label = "BETTER_TAP";
+			#binding-cells = <2>;
+			flavor = "tap-preferred";
+			tapping-term-ms = <150>;
+			quick-tap-ms = <0>;
+			bindings = <&kp>, <&kp>;
+		};
 		cose: comma_semicolon {
 			compatible = "zmk,behavior-mod-morph";
 			label = "COMMA_SEMICOLON";
@@ -48,9 +61,9 @@
 			label = "_BASE";
 			bindings = <
 				&trans    &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L  &kp U  &kp Y  &kp QMARK  &trans
-				&kp CAPS  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G    &kp M  &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O  &trans
+				&kp CAPS  &bt LGUI A  &bt LALT R  &bt LCTRL S  &bt LSHFT T  &kp G    &kp M  &bt RSHFT N  &bt RCTRL E  &bt RALT I  &bt RGUI O  &trans
 				&trans    &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &cose  &doco  &kp APOS  &trans
-				&lt _NAVI ESC  &lt _NUMB SPACE  &lt _SYMB TAB    &lt _HTKY ENTER  &lt _BRAC BSPC  &lt _FUNC DEL
+				&lt NAVI ESC  &lt NUMB SPACE  &lt SYMB TAB    &lt HTKY ENTER  &lt BRAC BSPC  &lt FUNC DEL
 			>;
 		};
 		functions_layer {
